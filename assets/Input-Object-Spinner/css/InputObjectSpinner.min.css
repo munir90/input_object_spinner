@@ -1,0 +1,87 @@
+/**
+ * Author and copyright: Munir Tariq
+ * Repository: https://github.com/munir90/input_object_spinner.git
+ * License: 
+ */
+
+.inputObjectSpinner>.input-group-prepend {
+    margin-right: 0;
+}
+
+.inputObjectSpinner>.input-group-append {
+    margin-left: 0;
+}
+
+.inputObjectSpinner>.input-group-prepend>button {
+    /* border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important; */
+    margin-left: -1px;
+}
+
+.inputObjectSpinner>.input-group-append>button {
+    /* border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important; */
+    margin-right: -1px;
+}
+
+.inputObjectSpinner>.input-group-prepend>button:after {
+    /* content: ' \02C4'; */
+}
+
+.inputObjectSpinner>.input-group-append>button:after {
+    /* content: ' \02C5'; */
+}
+
+.inputObjectSpinner>input {
+    border-top: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+}
+
+.inputObjectSpinner {
+    min-width: 160px;
+}
+
+.bg-white {
+    background-color: #fff!important;
+    color: #000!important;
+}
+
+.bg-yellow {
+    background-color: #ffc107!important;
+    color: #fff!important;
+}
+
+.bg-orange {
+    background-color: #e89b0f!important;
+    color: #fff!important;
+}
+
+.bg-green {
+    background-color: #4bae00!important;
+    color: #fff!important;
+}
+
+.bg-blue {
+    background-color: blue!important;
+    color: #fff!important;
+}
+
+.bg-purple {
+    background-color: #800080!important;
+    color: #fff!important;
+}
+
+.bg-brown {
+    background-color: #a5632a!important;
+    color: #fff!important;
+}
+
+.bg-red {
+    background-color: red!important;
+    color: #fff!important;
+}
+
+.bg-black {
+    background-color: #000!important;
+    color: #fff!important;
+}

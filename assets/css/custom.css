@@ -1,0 +1,20 @@
+body {
+    background: url('/iiap/assets/img/background.jpg');
+}
+
+.logo {
+    height: 100px;
+}
+
+.image-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.text-shadow {
+    text-shadow: 1px 5px 6px black;
+}
+
+.text-white a {
+    color: white;
+}

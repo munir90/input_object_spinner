@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet" type="text/css">
+    <link href="assets/Input-Object-Spinner/css/InputObjectSpinner.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+
+    <title>Spinner</title>
+
+    <style>
+        pre {
+            background: black;
+            color: #2eb8ec;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col">
+                <h1>Input Object / Text Values Spinner</h1>
+                <p>
+
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+
+                <h2>
+                    Initializing Spinner
+                </h2>
+
+                <p>
+
+                </p>
+                <pre>
+$(input).InputObjectSpinner("init", {
+    data: [
+        {
+            "text": "Option 1",
+            "value": "op_val_1",
+            "color_class": "bg-success",
+            "description": "Option 1 Description",
+            "default": true
+        },
+        {
+            "text": "Option 2",
+            "value": "op_val_2",
+            "color_class": "bg-warning",
+            "description": "Option 2 Description"
+        }
+        {
+            "text": "Option 3",
+            "value": "op_val_3",
+            "color_class": "bg-danger",
+            "description": "Option 3 Description"
+        }
+    ]
+});
+                    </pre>
+
+                <h2>Getting Selected Data</h2>
+
+                <p>
+                </p>
+
+                <pre>
+$(input).InputObjectSpinner("getSelectedData");
+                </pre>
+
+                <h2>Set Value?</h2>
+                <p>
+                </p>
+
+                <pre>
+$(input).setInputObjectValue("op_val_2");
+                </pre>
+
+                <h2>Check if input is object spinner?</h2>
+                <p>
+                </p>
+
+                <pre>
+let isInputObjectSpinner = $(input).InputObjectSpinner("isInputObjectSpinner");
+
+if (isInputObjectSpinner === true) {
+    console.log("This input is initialized as object spinner.");
+} else {
+    console.log("input is not an object spinner.");
+}
+                </pre>
+
+                <h2>Bootstrap form control input size?</h2>
+                <p>
+                </p>
+
+                <pre>
+$(input).InputObjectSpinner("init", {
+    sizing: "sm",
+    data: [
+    ]
+});
+                </pre>
+                
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+
+                        <div class="row">
+                            <h4>Intensity</h4>
+                        </div>
+
+                        <div class="row mb-4 main_row">
+                            <div class="col-md-4">
+                                <input type="text" id="test" name="testing1" />
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="text-area"></p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <h4>Martial Arts Belt?</h4>
+                        </div>
+                        <div class="row main_row">
+                            <div class="col-md-4">
+                                <input type="text" id="test2" name="testing2" />
+                            </div>
+
+                            <div class="col-md-8">
+                                <p class="text-area"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- <script src="./assets/spinner/js/spinner.min.js"></script> -->
+    <script src="./assets/Input-Object-Spinner/js/InputObjectSpinner.min.js"></script>
+
+    <script>
+        $("input[name='testing1']").InputObjectSpinner("init", {
+            data: [
+                {
+                    "text": "N/A",
+                    "value": "na",
+                    "color_class": "bg-primary",
+                    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+                    "default": true
+                },
+                {
+                    "text": "High",
+                    "value": "high",
+                    "color_class": "bg-danger",
+                    "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+                },
+                {
+                    "text": "Medium",
+                    "value": "medium",
+                    "color_class": "bg-warning",
+                    "description": "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                },
+                {
+                    "text": "Low",
+                    "value": "low",
+                    "color_class": "bg-success",
+                    "description": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                }
+            ]
+        });
+
+        $("input[name='testing2']").InputObjectSpinner("init", {
+            sizing: "sm",
+            data: [
+                {
+                    "text": "White",
+                    "value": "white",
+                    "color_class": "bg-white",
+                    "description": "White belt is the representation of very initial level of karate. It is worn by the students who have just started their study about karate. So, this white belt symbolizes their enthusiasm to learn and clean slate.",
+                    "default": true
+                },
+                {
+                    "text": "Yellow",
+                    "value": "yellow",
+                    "color_class": "bg-yellow",
+                    "description": "Yellow belt awarded to a student when he demonstrates that he is actually adopting this learning phase in a fruitful way. It also symbolizes the first beam of sun light that actually gives new rays and hope every morning. So, this yellow belt gives hope to a learner that he is actually learning and practicing at his best.",
+                    "default": true
+                },
+                {
+                    "text": "Orange",
+                    "value": "orange",
+                    "color_class": "bg-orange",
+                    "description": "Orange belt represents that student has further opened up his mind and his skills are improving rapidly. Just like when sun rays turn orange give representation of growing strength of sun, orange belt also symbolizes improvement in individual’s skills.",
+                    "default": true
+                },
+                {
+                    "text": "Green",
+                    "value": "green",
+                    "color_class": "bg-green",
+                    "description": "Green belt represents that a very basic steps of karate learning have been accomplished successfully. Green belt is awarded to intermediate students who are refining their kills.",
+                    "default": true
+                },
+                {
+                    "text": "Blue",
+                    "value": "blue",
+                    "color_class": "bg-blue",
+                    "description": "Blue belt represents further improvement and one level up. It is awarded to students who have started learning technical skills and additional knowledge about karate. Bluer color actually symbolizes that minds and bodies of students are continuously growing.",
+                    "default": true
+                },
+                {
+                    "text": "Purple",
+                    "value": "purple",
+                    "color_class": "bg-purple",
+                    "description": "As purple represents the color of dawn so purple belt is awarded to students who are converting into advanced stages of leaning phase.",
+                    "default": true
+                },
+                {
+                    "text": "Brown",
+                    "value": "brown",
+                    "color_class": "bg-brown",
+                    "description": "Just like the of ripening seed that is ready for harvest, the brown color in karate belts represents that students skills are getting matured and he’s leveling up to higher expertise. So, brown belt is awarded to students whose techniques have begun to mature.",
+                    "default": true
+                },
+                {
+                    "text": "Red",
+                    "value": "red",
+                    "color_class": "bg-red",
+                    "description": "Just like red color represents hot strength of the sun, red karate belt also represents that students have gained more detailed knowledge and they are well aware in discipline of their skills. Red color also signifies danger, so student who gets awarded with red belt is considered to be more dangerous in his/her skills and knowledge.",
+                    "default": true
+                },
+                {
+                    "text": "Black",
+                    "value": "black",
+                    "color_class": "bg-black",
+                    "description": "Black belt is awarded to students who seek to gain deeper and complete understanding of physical and mental teaching of karate. Many people after receiving black belts are considered to be expertise in their domain and they start passing on their skills to others.",
+                    "default": true
+                }
+            ]
+        });
+
+        // console.log($("input[name='testing1']"));
+        // console.log($("input[name='testing2']"));
+
+        $("input[name='testing1']").change(function () {
+            var data1 = $("input[name='testing1']").InputObjectSpinner("getSelectedData").description;
+            $("input[name='testing1']").closest(".main_row").find(".text-area").text(data1);
+            console.log($("input[name='testing1']").val());
+        });
+
+        $("input[name='testing2']").change(function () {
+            var data2 = $("input[name='testing2']").InputObjectSpinner("getSelectedData").description;
+            $("input[name='testing2']").closest(".main_row").find(".text-area").text(data2);
+            console.log($("input[name='testing2']").val());
+        });
+    </script>
+</body>
+
+</html>
