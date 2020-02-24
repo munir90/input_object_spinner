@@ -1,2 +1,2 @@
-# input_object_spinner
+# Input Object Spinner
 Input type text with object spinner
